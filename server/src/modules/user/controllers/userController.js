@@ -13,6 +13,10 @@ class UserController{
           res.status(500).json({ error: "Error adding user" });
         }
       };
+
+      static async seedUser(){  
+        return await UserRepository.seedUser();
+    }
 }
 
 module.exports = UserController;

@@ -11,6 +11,17 @@ class UserRepository{
     }
          }
 
+         static async seedUser() {
+            // const userData = {name: 'Keerthy', email:'user@gmail.com', password:'12345678'};
+            try {
+              const newUser = new User(userData);
+              return await newUser.save();
+            } catch (error) {
+              return error;
+            }
+          }
+        
+
 
 }
 

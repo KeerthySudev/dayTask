@@ -5,6 +5,7 @@ require('dotenv').config();
 const productRoutes = require('./modules/product/routes/productRoutes');
 const userRoutes = require('./modules/user/routes/userRoutes');
 const ProductController = require('./modules/product/controllers/productController');
+const UserController = require('./modules/user/controllers/userController');
 
 
 const app = express();
@@ -32,4 +33,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 
 // ProductController.seedProducts();
-ProductController.seedOffers();
+// UserController.seedUser();

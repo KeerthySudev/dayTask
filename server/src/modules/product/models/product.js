@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 
+
 const productSchema = new mongoose.Schema({
     productID: {
         type: String,
@@ -31,6 +32,7 @@ const offerSchema = new mongoose.Schema({
 const cartSchema = new mongoose.Schema({
     userId: {
         type: mongoose.Schema.Types.ObjectId,
+        ref: "User",
     },
     productId: {
         type: mongoose.Schema.Types.ObjectId,
@@ -41,10 +43,7 @@ const cartSchema = new mongoose.Schema({
         type: Number,
         default: 1,
     },
-isOfferActive: {
-    type: String,
-    default: "null",
-},
+
 });
 
 
