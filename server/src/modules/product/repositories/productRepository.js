@@ -286,33 +286,4 @@ class ProductRepository {
 
 module.exports = ProductRepository;
 
-// // Sample cart array (fetched from your backend or context)
-// const cart = [
-//     { productId: 'p1', name: 'Product 1', price: 100 },
-//     { productId: 'p2', name: 'Product 2', price: 200 },
-//     { productId: 'p3', name: 'Product 3', price: 300 },
-//   ];
 
-//   // Sample offers array (fetched from your backend)
-//   const offers = [
-//     { productId: 'p1', discount: 10 }, // 10% discount on Product 1
-//     { productId: 'p3', discount: 20 }, // 20% discount on Product 3
-//   ];
-
-//   // Iterate through each cart item and apply discount if offer exists
-//   const cartWithDiscounts = cart.map(item => {
-//     // Find if there's an offer for this product
-//     const offer = offers.find(offer => offer.productId === item.productId);
-
-//     // Calculate discounted price if offer exists
-//     const discountedPrice = offer
-//       ? item.price * (1 - offer.discount / 100)
-//       : item.price;
-
-//     return {
-//       ...item,
-//       discountedPrice, // Add discounted price to item
-//     };
-//   });
-
-//   console.log(cartWithDiscounts);
